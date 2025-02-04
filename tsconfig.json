@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": true,
+    "incremental": true,
+    "module": "esnext",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx"
+, "src/app/components/Sections/CommonLayout.jsx", "src/app/components/Sections/Hero.jsx", "src/app/components/Services/Card.jsx", "src/app/components/Services/Services.jsx", "src/app/components/Work/ProcessCard.jsx", "src/app/components/Work/Process.jsx"  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
