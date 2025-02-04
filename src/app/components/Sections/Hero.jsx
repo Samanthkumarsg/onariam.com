@@ -4,8 +4,6 @@ import { gsap } from "gsap";
 import { TextPlugin } from "gsap/TextPlugin";
 import { SiFigma, SiWebflow, SiVercel, SiSvelte, SiAstro, SiMiro, SiTailwindcss, SiPostman, SiReact, SiNextdotjs, SiGraphql, SiAppwrite, SiJavascript, SiDocker, SiPrisma, SiAmazonwebservices } from "react-icons/si";
 
-// Register the GSAP TextPlugin
-gsap.registerPlugin(TextPlugin);
 
 export const Hero = () => {
 
@@ -24,6 +22,14 @@ export const Hero = () => {
             y: 20,
             duration: 1,
             delay: 0.5,
+            ease: "power3.out",
+        });
+
+        gsap.from(".hero-mini-subtitle", {
+            opacity: 0,
+            y: 20,
+            duration: 1,
+            delay: 2,
             ease: "power3.out",
         });
 
@@ -48,7 +54,7 @@ export const Hero = () => {
     }, []);
 
     return (
-        <div className="h-[80vh] w-full flex items-center justify-center inset-0 bg-[radial-gradient(#f5f5f5_2px,transparent_2px)] [background-size:16px_16px] p-6">
+        <div className="h-[84vh] w-full flex flex-col items-center justify-center inset-0 bg-[radial-gradient(#f5f5f5_2px,transparent_2px)] [background-size:16px_16px] p-6">
             <div className="flex flex-col items-center justify-center">
                 <div className="text-3xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-6xl uppercase leading-normal text-center font-medium text-secondary">
                     <h1 className="hero-title leading-normal">not just another design agency</h1>
@@ -64,7 +70,7 @@ export const Hero = () => {
                 </button>
 
                 <div className="flex flex-col items-center justify-center mt-16">
-                    <h4 className="text-base font-medium text-secondary">Tech stack and tools we use</h4>
+                    <h4 className="text-base font-medium text-secondary hero-mini-subtitle">Tech stack and tools we use</h4>
                     <div className="mt-4 grid grid-cols-8 gap-6 max-w-screen-sm">
                         <SiFigma className="tech-stack-icon text-secondary size-5" />
                         <SiMiro className="tech-stack-icon text-secondary size-5" />

@@ -13,6 +13,9 @@ const config: Config = {
         foreground: "var(--foreground)",
         secondary: "#424242",
       },
+      fontFamily: {
+        moderno: ["var(--font-museo-moderno)", "cursive"],
+      }
     },
   },
   plugins: [],

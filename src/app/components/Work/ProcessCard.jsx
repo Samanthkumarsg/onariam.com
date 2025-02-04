@@ -8,7 +8,7 @@ export const ProcessCard = ({ icon, className, title, description }) => {
                 {icon}
             </div>
             <div className='flex flex-col items-center justify-center'>
-                <h1 className='text-2xl text-secondary font-bold mb-4 uppercase'>{title}</h1>
+                <h1 className='text-2xl text-secondary font-bold mb-4 uppercase text-center'>{title}</h1>
                 <p className='text-base leading-normal text-neutral-700 tracking-wide text-center '>{description}</p>
             </div>
         </div>

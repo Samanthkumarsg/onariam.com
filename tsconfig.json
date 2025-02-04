@@ -28,7 +28,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "src/app/components/Sections/CommonLayout.jsx", "src/app/components/Sections/Hero.jsx", "src/app/components/Services/Card.jsx", "src/app/components/Services/Services.jsx", "src/app/components/Work/ProcessCard.jsx", "src/app/components/Work/Process.jsx"  ],
+, "src/app/components/Sections/CommonLayout.jsx", "src/app/components/Sections/Hero.jsx", "src/app/components/Services/Card.jsx", "src/app/components/Services/Services.jsx", "src/app/components/Work/ProcessCard.jsx", "src/app/components/Work/Process.jsx", "src/app/components/Header/Header.jsx"  ],
   "exclude": [
     "node_modules"
   ]
