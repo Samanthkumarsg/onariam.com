@@ -9,7 +9,7 @@ export const Card = ({ icon, className, hasChildrenPills, title, description }) 
                 {icon}
             </div>
             <div className='flex flex-col'>
-                <h1 className='text-2xl text-secondary font-semibold mb-4 uppercase'>{title}</h1>
+                <h1 className='text-xl text-secondary font-semibold mb-4 uppercase'>{title}</h1>
                 <p className='text-base leading-normal text-neutral-700 tracking-wide '>{description}</p>
             </div>
             {hasChildrenPills && (<div className='mt-7 flex flex-col items-start justify-start gap-4 w-full *:w-full *:bg-orange-50 *:text-orange-700 font-medium *:tracking-wider *:p-2 *:text-sm *:rounded-lg *:border *:border-orange-700'>
