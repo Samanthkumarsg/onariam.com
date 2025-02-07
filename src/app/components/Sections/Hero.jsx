@@ -56,7 +56,7 @@ export const Hero = () => {
     return (
         <div className="h-[84vh] w-full flex flex-col items-center justify-center inset-0 bg-[radial-gradient(#f5f5f5_2px,transparent_2px)] [background-size:16px_16px] p-6">
             <div className="flex flex-col items-center justify-center">
-                <div className="text-3xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-6xl uppercase leading-normal text-center font-medium text-secondary">
+                <div className="text-3xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-6xl uppercase leading-normal text-center font-bold text-secondary">
                     <h1 className="hero-title leading-normal">not just another design agency</h1>
                     <h1 className="hero-title text-center">
                         we <span className="text-orange-700" >create experiences.</span>
