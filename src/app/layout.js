@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={` ${museoModerno.variable} ${plusJakartaSans.variable} antialiased`}
+        className={` ${museoModerno.variable} ${plusJakartaSans.variable} antialiased `}
       >
         {children}
       </body>

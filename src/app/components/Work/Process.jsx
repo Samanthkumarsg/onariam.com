@@ -56,6 +56,8 @@ export const Process = () => {
         }
     }, []);
 
+
+
     return (
         <div ref={servicesRef} className='flex flex-col items-center gap-10 rounded-3xl p-4 sticky top-0'>
             {/* Animated border line */}
