@@ -41,9 +41,7 @@ export default function Home() {
         <Process />
       </CommonLayout>
 
-      <CommonLayout title={"How we work"}>
-        <Process />
-      </CommonLayout>
+    
     </div>
   );
 }
