@@ -1,5 +1,6 @@
 import { MuseoModerno, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react"
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
       <body
         className={` ${museoModerno.variable} ${plusJakartaSans.variable} antialiased `}
       >
+        <Analytics />
         {children}
       </body>
     </html>
