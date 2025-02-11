@@ -6,6 +6,7 @@ import { Services } from "./components/Services/Services";
 import Lenis from 'lenis'
 import { Process } from "./components/Work/Process";
 import { Header } from "./components/Header/Header";
+import Calendar from "./components/Calendar/Calendar";
 
 export default function Home() {
   const scrollRef = useRef(null);
@@ -41,7 +42,7 @@ export default function Home() {
         <Process />
       </CommonLayout>
 
-    
+
     </div>
   );
 }

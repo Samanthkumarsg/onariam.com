@@ -4,11 +4,10 @@ import { gsap } from "gsap";
 import { TextPlugin } from "gsap/TextPlugin";
 import { SiFigma, SiWebflow, SiVercel, SiSvelte, SiAstro, SiMiro, SiTailwindcss, SiPostman, SiReact, SiNextdotjs, SiGraphql, SiAppwrite, SiJavascript, SiDocker, SiPrisma, SiAmazonwebservices } from "react-icons/si";
 
-
 export const Hero = () => {
 
-    useEffect(() => {
 
+    useEffect(() => {
 
         gsap.from(".hero-title", {
             opacity: 0,
@@ -54,7 +53,8 @@ export const Hero = () => {
     }, []);
 
     return (
-        <div className="h-[84vh] w-full flex flex-col items-center justify-center inset-0 bg-[radial-gradient(#f5f5f5_2px,transparent_2px)] [background-size:16px_16px] p-6">
+        <div className="h-[90vh] w-full flex flex-col items-center justify-center inset-0 bg-[radial-gradient(#f5f5f5_2px,transparent_2px)] [background-size:16px_16px] p-6">
+
             <div className="flex flex-col items-center justify-center">
                 <div className="text-3xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-6xl uppercase leading-normal text-center font-medium text-secondary">
                     <h1 className="hero-title leading-normal">not just another design agency</h1>
@@ -65,7 +65,7 @@ export const Hero = () => {
                 <h2 className="hero-subtitle text-base sm:text-lg md:text-xl lg:text-xl xl:text-xl text-neutral-600 font-normal my-4 leading-relaxed tracking-wide text-center line-clamp-2">
                     Stunning designs, seamless experiences, and websites that drive results crafted just for you
                 </h2>
-                <button className="cta-button uppercase bg-[#292929] text-white text-base font-medium tracking-wide rounded-full px-20 py-3 mt-6">
+                <button className="cta-button uppercase bg-[#292929] text-white text-base font-medium tracking-wide rounded-full px-20 py-3 mt-6" >
                     book a call
                 </button>
 
