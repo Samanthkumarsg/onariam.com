@@ -1,6 +1,7 @@
 "use client"
 import React, { useEffect } from 'react'
 import { gsap } from 'gsap';
+import Link from 'next/link';
 
 
 export const Header = () => {
@@ -34,7 +35,11 @@ export const Header = () => {
                     <h1 className='hover:text-neutral-900 hover:font-medium '>Faq's</h1>
                 </div>
                 <div className='bg-white '>
-                    <button className='text-xs rounded-xl py-2.5 px-5 bg-orange-700 text-white uppercase'>let’s discuss</button>
+                    <Link href="https://cal.com/onariam" target="_blank" rel="noopener noreferrer">
+
+                        <button className='text-xs rounded-xl py-2.5 px-5 bg-orange-700 text-white uppercase'>let’s discuss</button>
+                    </Link>
+
                 </div>
             </div>
         </div>

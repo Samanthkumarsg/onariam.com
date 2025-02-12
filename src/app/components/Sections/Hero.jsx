@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import { TextPlugin } from "gsap/TextPlugin";
 import { SiFigma, SiWebflow, SiVercel, SiSvelte, SiAstro, SiMiro, SiTailwindcss, SiPostman, SiReact, SiNextdotjs, SiGraphql, SiAppwrite, SiJavascript, SiDocker, SiPrisma, SiAmazonwebservices } from "react-icons/si";
+import Link from "next/link";
 
 export const Hero = () => {
 
@@ -65,9 +66,11 @@ export const Hero = () => {
                 <h2 className="hero-subtitle text-base sm:text-lg md:text-xl lg:text-xl xl:text-xl text-neutral-600 font-normal my-4 leading-relaxed tracking-wide text-center line-clamp-2">
                     Stunning designs, seamless experiences, and websites that drive results crafted just for you
                 </h2>
-                <button className="cta-button uppercase bg-[#292929] text-white text-base font-medium tracking-wide rounded-full px-20 py-3 mt-6" >
-                    book a call
-                </button>
+                <Link href="https://cal.com/onariam" target="_blank" rel="noopener noreferrer">
+                    <button className="cta-button uppercase bg-[#292929] text-white text-base font-medium tracking-wide rounded-full px-20 py-3 mt-6" >
+                        Book a call
+                    </button>
+                </Link>
 
                 <div className="flex flex-col items-center justify-center mt-16">
                     <h4 className="text-base font-medium text-secondary hero-mini-subtitle">Tech stack and tools we use</h4>

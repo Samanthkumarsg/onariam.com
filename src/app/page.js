@@ -7,6 +7,7 @@ import Lenis from 'lenis'
 import { Process } from "./components/Work/Process";
 import { Header } from "./components/Header/Header";
 import Calendar from "./components/Calendar/Calendar";
+import Pricing from "./components/Pricing/Pricing";
 
 export default function Home() {
   const scrollRef = useRef(null);
@@ -34,14 +35,17 @@ export default function Home() {
     <div ref={scrollRef} className="w-full mx-auto">
       <Header />
       <Hero />
-      <CommonLayout title={"What we offer you"}>
+      <CommonLayout text={"THIS IS"} title={"What we offer you"}>
         <Services />
       </CommonLayout>
 
-      <CommonLayout title={"How we work"}>
+      <CommonLayout text={"THIS IS"} title={"How we work"}>
         <Process />
       </CommonLayout>
 
+      <CommonLayout text={"Simple and transparent "} title={"Pricing"}>
+        <Pricing />
+      </CommonLayout>
 
     </div>
   );
