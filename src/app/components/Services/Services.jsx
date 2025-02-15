@@ -36,7 +36,7 @@ export const Services = () => {
     }, []);
 
     return (
-        <div ref={servicesRef} className='flex flex-col sm:flex sm:flex-col md:grid md:grid-cols-3 md:grid-rows-3 lg:grid lg:grid-cols-3 lg:grid-rows-3 xl:grid xl:grid-cols-3 xl:grid-rows-3 gap-4  rounded-3xl p-4 border '>
+        <div ref={servicesRef} className='flex flex-col sm:flex sm:flex-col md:grid md:grid-cols-3 md:grid-rows-3 lg:grid lg:grid-cols-3 lg:grid-rows-3 xl:grid xl:grid-cols-3 xl:grid-rows-3 gap-4  rounded-3xl p-4 border *:w-full'>
             <Card className='col-span-1 row-span-2' icon={<RxRulerSquare className="size-10 text-orange-700" />} hasChildrenPills={true} title="UI/UX" description='We craft intuitive, user-friendly interfaces with research-driven UX, sleek UI designs, and interactive prototypes ensuring seamless digital experiences.' />
             <Card className='col-span-2 row-span-1' icon={<RxCode className="size-10 text-orange-700" />} hasChildrenPills={false} title="WEB DEVELOPMENT" description="We build high-performance websites faster and smarter, seamless functionality, and optimized user experience" />
             <Card className='col-span-1 row-span-1' icon={<RxMagnifyingGlass className="size-10 text-orange-700" />} hasChildrenPills={false} title="SEO" description="We optimize your website for higher rankings, more traffic, and better conversions." />

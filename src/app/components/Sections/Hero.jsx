@@ -54,7 +54,7 @@ export const Hero = () => {
     }, []);
 
     return (
-        <div className="h-[90vh] w-full flex flex-col items-center justify-center inset-0 bg-[radial-gradient(#f5f5f5_2px,transparent_2px)] [background-size:16px_16px] p-6">
+        <div className="h-screen w-full flex flex-col items-center justify-center inset-0 bg-[radial-gradient(#f5f5f5_2px,transparent_2px)] [background-size:16px_16px] p-6">
 
             <div className="flex flex-col items-center justify-center">
                 <div className="text-3xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-6xl uppercase leading-normal text-center font-medium text-secondary">
