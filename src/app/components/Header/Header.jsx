@@ -23,9 +23,9 @@ export const Header = () => {
 
     return (
         <div className='w-full fixed bottom-0 sm:bottom-0 md:top-0 lg:top-0 xl:top-0 p-6 h-fit z-10'>
-            <div className='header mt-0  max-w-screen-lg mx-auto border p-3 flex flex-row items-center justify-between rounded-3xl bg-white  z-50'>
-                <div className='bg-white '>
-                    <h1 className='text-lg font-moderno text-orange-700 font-medium'>Onariam</h1>
+            <div className='header mt-0  max-w-screen-lg mx-auto border p-3 flex flex-row items-center justify-between rounded-full bg-white  z-50'>
+                <div className='bg-white ms-2 '>
+                    <h1 className='text-base font-moderno text-orange-700 font-medium lead'>Onariam</h1>
                 </div>
                 <div className='*:text-neutral-500 *:font-medium cursor-pointer hover:text-neutral-900 uppercase *:text-xs gap-6 tracking-wider hidden sm:hidden md:flex md:flex-row lg:flex lg:flex-row xl:flex xl:flex-row bg-white'>
                     <h1 className='hover:text-neutral-900 hover:font-medium '>Our Work</h1>
@@ -37,7 +37,7 @@ export const Header = () => {
                 <div className='bg-white '>
                     <Link href="https://cal.com/onariam" target="_blank" rel="noopener noreferrer">
 
-                        <button className='text-xs rounded-xl py-2.5 px-5 bg-orange-700 text-white uppercase'>let’s discuss</button>
+                        <button className='text-xs rounded-full py-2.5 px-5 bg-orange-700 text-white uppercase'>let’s discuss</button>
                     </Link>
 
                 </div>

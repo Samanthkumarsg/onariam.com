@@ -68,30 +68,35 @@ export const Process = () => {
             <ProcessCard
                 className='col-span-1 row-span-2'
                 icon={<RxRadiobutton className="size-7 text-orange-700 " />}
+                id={1}
                 title="Intro Call & Discovery"
                 description='We start with a conversation to understand your goals, challenges, and vision for the project.'
             />
             <ProcessCard
                 className='col-span-2 row-span-1'
                 icon={<RxRadiobutton className="size-7 text-orange-700" />}
+                id={2}
                 title="Strategy & Planning"
                 description="Based on your needs, we create a detailed strategy, including timelines, scope, and design concepts."
             />
             <ProcessCard
                 className='col-span-1 row-span-1'
                 icon={<RxRadiobutton className="size-7 text-orange-700" />}
+                id={3}
                 title="Design & Development"
                 description="We bring your vision to life with stunning designs and efficient development, ensuring seamless user experience."
             />
             <ProcessCard
                 className='col-span-1 row-span-1'
                 icon={<RxRadiobutton className="size-7 text-orange-700" />}
+                id={4}
                 title="Review & Feedback "
                 description="You’ll get regular updates and the opportunity to provide feedback for refinement."
             />
             <ProcessCard
                 className='col-span-2 row-span-1'
                 icon={<RxRadiobutton className="size-7 text-orange-700" />}
+                id={5}
                 title="Final Handover & Support "
                 description="Once approved, we deliver the final product along with ongoing support to ensure smooth operation."
             />
