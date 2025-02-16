@@ -73,7 +73,7 @@ const Pricing: React.FC = memo(() => {
 
     return (
         <div className="w-full border grid grid-cols-1 sm:grid-col-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3  rounded-3xl overflow-hidden ">
-            <div className="w-full flex flex-col p-6">
+            <div className="w-full flex flex-col p-6 bg-white">
                 <div className="w-full flex flex-col mb-6 ">
                     <h2 className="text-lg mb-1 font-bold text-secondary">Select Your Plan</h2>
                     <h3 className="text-sm font-normal text-neutral-500  ">A plan that scales with your rapidly growing business</h3>
@@ -83,11 +83,11 @@ const Pricing: React.FC = memo(() => {
                         <div
                             key={item.name}
                             className={`flex flex-col items-center justify-center rounded-md text-lg w-full p-4 border cursor-pointer 
-                                ${selectedPlan?.name === item.name ? "ring-1 ring-orange-700 text-orange-700" : ""}`}
+                                ${selectedPlan?.name === item.name ? "ring-1 ring-orange-700 ring-offset-4 text-orange-700" : ""}`}
                             onClick={() => handlePlanChange(item)}
                         >
                             <h1 className="text-sm font-medium  text-secondary">{item.name}</h1>
-                            <h1 className="text-lg font-semibold text-orange-700">€ {item.plan}</h1>
+                            <h1 className="text-lg font-medium text-orange-700">€ {item.plan}</h1>
                         </div>
                     ))}
                 </div>

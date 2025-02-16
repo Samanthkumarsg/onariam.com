@@ -57,10 +57,10 @@ export const Hero = () => {
         <div className="h-screen w-full flex flex-col items-center justify-center inset-0 bg-[radial-gradient(#f5f5f5_1px,transparent_1px)] [background-size:8px_8px] p-6">
 
             <div className="flex flex-col items-center justify-center">
-                <div className="text-3xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-6xl uppercase leading-normal text-center font-medium text-secondary">
+                <div className="text-3xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-5xl uppercase leading-normal text-center font-medium text-secondary text-pretty">
                     <h1 className="hero-title leading-normal">not just another design agency</h1>
                     <h1 className="hero-title text-center">
-                        we <span className="text-orange-700" >create experiences.</span>
+                         <span className="text-orange-700" > Creating Digital Ecosystem</span>
                     </h1>
                 </div>
                 <h2 className="hero-subtitle text-base sm:text-lg md:text-lg lg:text-lg xl:text-lg text-neutral-600 font-normal my-4 leading-relaxed tracking-wide text-center line-clamp-2">
