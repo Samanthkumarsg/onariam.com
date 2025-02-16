@@ -67,7 +67,7 @@ export const Hero = () => {
                     Stunning designs, seamless experiences, and websites that drive results crafted just for you
                 </h2>
                 <Link href="https://cal.com/onariam" target="_blank" rel="noopener noreferrer">
-                    <button className="cta-button uppercase bg-[#292929] hover:bg-orange-700 transition-all text-white text-base font-medium tracking-wide rounded-full px-20 py-3 mt-6" >
+                    <button className="cta-button uppercase bg-[#292929] hover:bg-orange-700  text-white text-base font-medium tracking-wide rounded-full px-20 py-3 mt-6" >
                         Book a call
                     </button>
                 </Link>
