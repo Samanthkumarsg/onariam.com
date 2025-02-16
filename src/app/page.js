@@ -43,7 +43,7 @@ export default function Home() {
         <Process />
       </CommonLayout>
 
-      <CommonLayout text={"Simple and transparent "} title={"Pricing"}>
+      <CommonLayout text={"Our Simple "} title={"Pricing"}>
         <Pricing />
       </CommonLayout>
 

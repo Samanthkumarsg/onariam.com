@@ -72,17 +72,17 @@ const Pricing: React.FC = memo(() => {
     }, [selectedPlan]);
 
     return (
-        <div className="w-full border grid grid-cols-1 sm:grid-col-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3  p-8 gap-6 rounded-3xl">
-            <div className="w-full flex flex-col">
-                <div className="w-full flex flex-col mb-6">
+        <div className="w-full border grid grid-cols-1 sm:grid-col-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3  rounded-3xl overflow-hidden ">
+            <div className="w-full flex flex-col p-6">
+                <div className="w-full flex flex-col mb-6 ">
                     <h2 className="text-lg mb-1 font-bold text-secondary">Select Your Plan</h2>
-                    <h3 className="text-base font-normal text-neutral-500  ">A plan that scales with your rapidly growing business</h3>
+                    <h3 className="text-sm font-normal text-neutral-500  ">A plan that scales with your rapidly growing business</h3>
                 </div>
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-4 ">
                     {pricingPlans.map((item) => (
                         <div
                             key={item.name}
-                            className={`flex flex-col items-start justify-center rounded-md text-lg w-full p-3 border cursor-pointer 
+                            className={`flex flex-col items-center justify-center rounded-md text-lg w-full p-4 border cursor-pointer 
                                 ${selectedPlan?.name === item.name ? "ring-1 ring-orange-700 text-orange-700" : ""}`}
                             onClick={() => handlePlanChange(item)}
                         >
@@ -94,12 +94,12 @@ const Pricing: React.FC = memo(() => {
             </div>
 
             {/* Features Section */}
-            <div ref={planRef} className="col-span-2 w-full flex gap-4 bg-neutral-50 p-6 rounded-2xl ">
+            <div ref={planRef} className="col-span-2 w-full flex gap-4 bg-neutral-50 p-6 ">
                 {selectedPlan && (
                     <div className="flex flex-col items-start">
                         <div className="w-full flex flex-col mb-6">
                             {/* <h2 className="text-lg mb-1 font-semibold text-secondary">Features</h2> */}
-                            <h3 className="text-md text-secondary  ">{selectedPlan?.description}</h3>
+                            <h3 className="text-lg text-secondary  ">{selectedPlan?.description}</h3>
                         </div>
                         <div className="flex flex-col gap-4 ">
                             {selectedPlan.features.map((item, index) => (
