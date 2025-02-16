@@ -107,7 +107,7 @@ const Pricing: React.FC = memo(() => {
                             ))}
                             <div className="mt-6">
                                 <Link href="https://cal.com/onariam" target="_blank" rel="noopener noreferrer">
-                                    <button className="cta-button uppercase bg-orange-700 text-white text-sm font-medium tracking-wide rounded-sm px-20 py-3 " >
+                                    <button className="cta-button uppercase bg-[#292929]  hover:bg-orange-700  text-white text-sm font-medium tracking-wide rounded-full px-20 py-3 " >
                                         Book a call
                                     </button>
                                 </Link>

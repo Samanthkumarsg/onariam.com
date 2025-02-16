@@ -37,7 +37,7 @@ export const Header = () => {
                 <div className='bg-white '>
                     <Link href="https://cal.com/onariam" target="_blank" rel="noopener noreferrer">
 
-                        <button className='text-xs rounded-full py-2.5 px-5 bg-orange-700 text-white uppercase'>let’s discuss</button>
+                        <button className='text-xs rounded-full py-2.5 px-5 bg-orange-700 hover:bg-[#292929] text-white uppercase'>let’s discuss</button>
                     </Link>
 
                 </div>
