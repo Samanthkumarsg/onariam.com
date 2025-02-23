@@ -59,7 +59,7 @@ export const Process = () => {
 
 
     return (
-        <div ref={servicesRef} className='flex flex-col items-center gap-10 rounded-3xl p-4 sticky top-0'>
+        <div ref={servicesRef} className='flex flex-col items-center gap-10 rounded-3xl p-4 sticky top-0' id="work">
             {/* Animated border line */}
             <div ref={borderRef} className='border border-orange-700 h-full absolute z-20 left-1/2 '></div>
             <div className='border border-orange-700/10 h-full absolute z-10  left-1/2'></div>

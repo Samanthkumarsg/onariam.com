@@ -2,8 +2,10 @@
 import React, { useState, useMemo, useCallback, useTransition, memo, useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import Link from "next/link";
+import { se } from "date-fns/locale";
 
 interface PricingPlan {
+    length: number;
     name: string;
     plan: number;
     description: string;
@@ -72,53 +74,57 @@ const Pricing: React.FC = memo(() => {
     }, [selectedPlan]);
 
     return (
-        <div className="w-full border grid grid-cols-1 sm:grid-col-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3  p-8 gap-6 rounded-3xl">
-            <div className="w-full flex flex-col">
-                <div className="w-full flex flex-col mb-6">
-                    <h2 className="text-lg mb-1 font-bold text-secondary">Select Your Plan</h2>
-                    <h3 className="text-base font-normal text-neutral-500  ">A plan that scales with your rapidly growing business</h3>
-                </div>
-                <div className="flex flex-col gap-4">
+        <div className="w-full border border-orange-100 grid grid-cols-1  sm:grid-col-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1  p-4 rounded-3xl overflow-hidden ">
+            <div className="col-span-2 w-full flex flex-col  rounded-2xl ">
+
+                <div className="flex flex-row ">
                     {pricingPlans.map((item) => (
                         <div
                             key={item.name}
-                            className={`flex flex-col items-start justify-center rounded-md text-lg w-full p-3 border cursor-pointer 
-                                ${selectedPlan?.name === item.name ? "ring-1 ring-orange-700 text-orange-700" : ""}`}
+                            className={`flex flex-col items-center  justify-center text-lg w-full py-4  cursor-pointer 
+                                ${selectedPlan?.name === item.name ? "bg-orange-100/50 rounded-t-xl text-orange-700" : "border-x-0 ring-neutral-200"}`}
                             onClick={() => handlePlanChange(item)}
                         >
-                            <h1 className="text-sm font-medium  text-secondary">{item.name}</h1>
-                            <h1 className="text-lg font-semibold text-orange-700">€ {item.plan}</h1>
+                            <h1 className={`text-sm font-medium ${selectedPlan?.name === item.name ? " text-orange-700" : "text-neutral-400 "} `}> {item.name}</h1>
                         </div>
                     ))}
                 </div>
             </div>
 
             {/* Features Section */}
-            <div ref={planRef} className="col-span-2 w-full flex gap-4 bg-neutral-50 p-6 rounded-2xl ">
+            <div ref={planRef} className={`col-span-2  h-fit w-full flex flex-col items-center bg-orange-50   rounded-b-xl
+             ${selectedPlan?.name == 'Starter' ? " rounded-tl-none rounded-tr-xl text-gray-700" : ""}
+             ${selectedPlan?.name == 'Premium' ? "rounded-xl text-gray-700" : ""}
+             ${selectedPlan?.name == 'Enterprise' ? " rounded-tr-none rounded-tl-xl  text-gray-700" : ""}
+
+              `}>
                 {selectedPlan && (
-                    <div className="flex flex-col items-start">
-                        <div className="w-full flex flex-col mb-6">
-                            {/* <h2 className="text-lg mb-1 font-semibold text-secondary">Features</h2> */}
-                            <h3 className="text-md text-secondary  ">{selectedPlan?.description}</h3>
+                    <div className="flex flex-col items-start  rounded-2xl   w-full">
+                        <div className="p-6 w-full flex flex-col  items-center justify-center">
+                            <h2 className="text-md mb-1 font-medium text-orange-700 ">{selectedPlan?.name} Benefits</h2>
+                            <h1 className="text-sm font-normal tracking-wide text-neutral-500 ">{selectedPlan?.description}</h1>
+                            {/* <h3 className="text-md text-secondary  ">Features</h3> */}
                         </div>
-                        <div className="flex flex-col gap-4 ">
+                        <div className="flex flex-wrap items-center justify-center gap-4 p-4  w-fit  rounded-xl ">
                             {selectedPlan.features.map((item, index) => (
-                                <div key={index} className="text-sm rounded text-orange-700">{item}</div>
+                                <div key={index} className="text-sm rounded-xl font-normal tracking-wider p-4 text-orange-700 shadow-sm shadow-orange-100 flex items-center justify-start w-full sm:w-full md:w-fit lg:w-fit xl:w-fit   bg-orange-100/70 ">{item}</div>
                             ))}
-                            <div className="mt-6">
-                                <Link href="https://cal.com/onariam" target="_blank" rel="noopener noreferrer">
-                                    <button className="cta-button uppercase bg-orange-700 text-white text-sm font-medium tracking-wide rounded-sm px-20 py-3 " >
-                                        Book a call
-                                    </button>
-                                </Link>
-                            </div>
 
                         </div>
-
                     </div>
                 )}
+
+                <div className=" flex flex-col w-full items-center justify-center  py-6 mt-4 ">
+                    <h1 className="font-semibold text-xl text-orange-700 mb-4 text-center">Want to know more about {selectedPlan?.name} Plan </h1>
+                    <Link href="https://cal.com/onariam" target="_blank" rel="noopener noreferrer">
+                        <button className="cta-button uppercase bg-orange-700 text-white text-sm font-medium tracking-wide rounded-full  px-8 py-3 " >
+                            Book a call
+                        </button>
+                    </Link>
+                </div>
+
             </div>
-        </div>
+        </div >
     );
 });
 

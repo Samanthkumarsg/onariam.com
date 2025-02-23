@@ -28,7 +28,9 @@ export const Header = () => {
                     <h1 className='text-xl font-moderno text-orange-700 font-medium'>Onariam</h1>
                 </div>
                 <div className='*:text-neutral-500 *:font-medium cursor-pointer hover:text-neutral-900 uppercase *:text-xs gap-6 tracking-wider hidden sm:hidden md:flex md:flex-row lg:flex lg:flex-row xl:flex xl:flex-row bg-white'>
-                    <h1 className='hover:text-neutral-900 hover:font-medium '>Our Work</h1>
+                    <Link href="#work" >
+                        <h1 className='hover:text-neutral-900 hover:font-medium '>Our Work</h1>
+                    </Link>
                     <h1 className='hover:text-neutral-900 hover:font-medium '>Our Services</h1>
                     {/* <h1 className='hover:text-neutral-900 hover:font-medium '>testimonials</h1> */}
                     <h1 className='hover:text-neutral-900 hover:font-medium '>Pricing</h1>

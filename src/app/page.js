@@ -6,8 +6,9 @@ import { Services } from "./components/Services/Services";
 import Lenis from 'lenis'
 import { Process } from "./components/Work/Process";
 import { Header } from "./components/Header/Header";
-import Calendar from "./components/Calendar/Calendar";
 import Pricing from "./components/Pricing/Pricing";
+import Footer from "./components/Footer/Footer";
+
 
 export default function Home() {
   const scrollRef = useRef(null);
@@ -43,9 +44,11 @@ export default function Home() {
         <Process />
       </CommonLayout>
 
-      <CommonLayout text={"Simple and transparent "} title={"Pricing"}>
+      <CommonLayout text={"Simple  "} title={"Pricing"}>
         <Pricing />
       </CommonLayout>
+
+      <Footer />
 
     </div>
   );
