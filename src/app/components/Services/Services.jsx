@@ -37,7 +37,7 @@ export const Services = () => {
     return (
         <div
             ref={servicesRef}
-            className="flex flex-col sm:flex sm:flex-col md:flex md:flex-col  lg:grid lg:grid-cols-3 lg:grid-rows-subgrid xl:grid xl:grid-cols-3 xl:grid-rows-subgrid gap-4 rounded-3xl p-4 border border-orange-100  *:border *:border-orange-100   "
+            className="flex flex-col sm:flex sm:flex-col md:flex md:flex-col  lg:grid lg:grid-cols-3 lg:grid-rows-subgrid xl:grid xl:grid-cols-3 xl:grid-rows-subgrid gap-4 rounded-3xl p-4 border border-orange-100  *:border *:border-orange-100 bg-white  "
         >
             <Card
                 className="col-span-1 row-span-2 "

@@ -19,6 +19,7 @@ export const Card = ({ icon, className = "", title, description }) => {
                 <h1 className="text-lg text-orange-700/80 font-semibold mb-4 uppercase border border-t-0 border-r-0 border-orange-700/10 p-4 pt-1 rounded-b-xl rounded-r-none">{title}</h1>
                 <p className="text-base font-normal leading-normal text-secondary tracking-wide">{description}</p>
             </div>
+
             <div className={`*:text-left *:rounded-xl *:p-3 *:w-fit *:bg-orange-100/70 ${containerClasses} flex gap-4 flex-wrap`}>
                 {title === "UI/UX" ? (
                     <>
@@ -61,6 +62,7 @@ export const Card = ({ icon, className = "", title, description }) => {
                     </>
                 ) : null}
             </div>
+
         </div>
     );
 };

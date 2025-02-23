@@ -1,11 +1,9 @@
 "use client";
-import React, { useState, useMemo, useCallback, useTransition, memo, useEffect, useRef } from "react";
+import React, { useState, useCallback, useTransition, memo, useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import Link from "next/link";
-import { se } from "date-fns/locale";
 
 interface PricingPlan {
-    length: number;
     name: string;
     plan: number;
     description: string;
@@ -74,7 +72,8 @@ const Pricing: React.FC = memo(() => {
     }, [selectedPlan]);
 
     return (
-        <div className="w-full border border-orange-100 grid grid-cols-1  sm:grid-col-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1  p-4 rounded-3xl overflow-hidden ">
+
+        <div className="w-full border border-orange-100 grid grid-cols-1  sm:grid-col-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1  p-4 rounded-3xl overflow-hidden bg-white">
             <div className="col-span-2 w-full flex flex-col  rounded-2xl ">
 
                 <div className="flex flex-row ">
@@ -86,6 +85,7 @@ const Pricing: React.FC = memo(() => {
                             onClick={() => handlePlanChange(item)}
                         >
                             <h1 className={`text-sm font-medium ${selectedPlan?.name === item.name ? " text-orange-700" : "text-neutral-400 "} `}> {item.name}</h1>
+
                         </div>
                     ))}
                 </div>
@@ -104,14 +104,16 @@ const Pricing: React.FC = memo(() => {
                             <h2 className="text-md mb-1 font-medium text-orange-700 ">{selectedPlan?.name} Benefits</h2>
                             <h1 className="text-sm font-normal tracking-wide text-neutral-500 ">{selectedPlan?.description}</h1>
                             {/* <h3 className="text-md text-secondary  ">Features</h3> */}
+
                         </div>
                         <div className="flex flex-wrap items-center justify-center gap-4 p-4  w-fit  rounded-xl ">
                             {selectedPlan.features.map((item, index) => (
                                 <div key={index} className="text-sm rounded-xl font-normal tracking-wider p-4 text-orange-700 shadow-sm shadow-orange-100 flex items-center justify-start w-full sm:w-full md:w-fit lg:w-fit xl:w-fit   bg-orange-100/70 ">{item}</div>
                             ))}
 
-                        </div>
-                    </div>
+
+                        </div >
+                    </div >
                 )}
 
                 <div className=" flex flex-col w-full items-center justify-center  py-6 mt-4 ">
@@ -123,7 +125,7 @@ const Pricing: React.FC = memo(() => {
                     </Link>
                 </div>
 
-            </div>
+            </div >
         </div >
     );
 });
