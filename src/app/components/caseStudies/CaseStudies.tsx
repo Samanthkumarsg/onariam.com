@@ -98,7 +98,7 @@ const CaseStudies: React.FC = memo(() => {
 
                 <div className=" flex flex-col w-full items-center justify-center  py-6 mt-4 ">
                     <h1 className="font-normal text-xl text-secondary mb-4 text-center"> Want to know more ? </h1>
-                    <div className="flex flex-row gap-4 flex-wrap items-center  ju">
+                    <div className="flex flex-row gap-4 flex-wrap items-center  justify-center">
                         <Link href="https://www.grado-babo.com" target="_blank" rel="noopener noreferrer">
                             <button className="cta-button uppercase bg-secondary hover:bg-orange-700 text-white text-sm font-medium tracking-wide rounded-full  px-8 py-3 " >
                                 Visit Grado Babo ◥
