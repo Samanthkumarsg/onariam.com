@@ -117,9 +117,9 @@ const Pricing: React.FC = memo(() => {
                 )}
 
                 <div className=" flex flex-col w-full items-center justify-center  py-6 mt-4 ">
-                    <h1 className="font-semibold text-xl text-orange-700 mb-4 text-center">Want to know more about {selectedPlan?.name} Plan </h1>
+                    <h1 className="font-normal text-xl text-secondary mb-4 text-center">Have any questions regarding {selectedPlan?.name} Plan ? </h1>
                     <Link href="https://cal.com/onariam" target="_blank" rel="noopener noreferrer">
-                        <button className="cta-button uppercase bg-orange-700 text-white text-sm font-medium tracking-wide rounded-full  px-8 py-3 " >
+                        <button className="cta-button uppercase bg-secondary text-white text-sm font-medium tracking-wide rounded-full  px-8 py-3 " >
                             Book a call
                         </button>
                     </Link>

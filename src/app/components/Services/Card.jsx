@@ -12,7 +12,7 @@ export const Card = ({ icon, className = "", title, description }) => {
 
     return (
         <div
-            className={`flex flex-col items-start justify-start rounded-3xl bg-white border p-4 ${className} bg-gradient-to-t from-gray-50/10 to-orange-700/10`}
+            className={`flex flex-col items-start justify-start rounded-3xl bg-white  p-4 ${className} bg-gradient-to-t from-gray-50/10 to-orange-700/10`}
         >
             <div className="rounded-xl rounded-tr-none rounded-b-none  pb-0  mb-1  flex items-start justify-start ">{icon}</div>
             <div className="flex flex-col ">

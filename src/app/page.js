@@ -3,15 +3,15 @@ import { useEffect, useRef } from "react";
 import { CommonLayout } from "./components/Sections/CommonLayout";
 import { Hero } from "./components/Sections/Hero";
 import { Services } from "./components/Services/Services";
-import Lenis from 'lenis'
+import Lenis from 'lenis';
 import { Process } from "./components/Work/Process";
 import { Header } from "./components/Header/Header";
 import Pricing from "./components/Pricing/Pricing";
 import Footer from "./components/Footer/Footer";
 
-
 export default function Home() {
   const scrollRef = useRef(null);
+  const lenisRef = useRef(null);
 
   useEffect(() => {
     const lenis = new Lenis({
@@ -19,6 +19,7 @@ export default function Home() {
       gestureOrientation: 'vertical',
       infinite: false,
     });
+    lenisRef.current = lenis; // Store Lenis instance in ref
 
     function scrollLoop(time) {
       lenis.raf(time);
@@ -34,22 +35,18 @@ export default function Home() {
 
   return (
     <div ref={scrollRef} className="w-full mx-auto">
-      <Header />
-      <Hero />
-      <CommonLayout text={"THIS IS"} title={"What we offer you"}>
+      <Header lenis={lenisRef} />
+      <div id="hero"><Hero /></div>
+      <CommonLayout text={"THIS IS"} title={"What we offer you"} id="services">
         <Services />
       </CommonLayout>
-
-      <CommonLayout text={"THIS IS"} title={"How we work"}>
+      <CommonLayout text={"THIS IS"} title={"How we work"} id="work">
         <Process />
       </CommonLayout>
-
-      <CommonLayout text={"Simple  "} title={"Pricing"}>
+      <CommonLayout text={"Simple  "} title={"Pricing"} id="pricing">
         <Pricing />
       </CommonLayout>
-
       <Footer />
-
     </div>
   );
 }
