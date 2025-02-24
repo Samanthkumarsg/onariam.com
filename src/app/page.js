@@ -44,8 +44,8 @@ export default function Home() {
       <CommonLayout text={"THIS IS"} title={"How we work"} id="work">
         <Process />
       </CommonLayout>
-      <CommonLayout text={"Our Clients Case Studies"} title={"Based on true Stories"} id="pricing">
-        <CaseStudies /> 
+      <CommonLayout text={"Our Clients Case Studies"} title={"Based on true Stories"} id="caseStudies">
+        <CaseStudies />
       </CommonLayout>
       <CommonLayout text={"Simple  "} title={"Pricing"} id="pricing">
         <Pricing />
