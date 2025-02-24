@@ -42,6 +42,9 @@ export const Header = ({ lenis }) => {
                         <h1 className='hover:text-neutral-900 hover:font-medium'>Our Work</h1>
                     </Link>
                     <Link href="#pricing" onClick={(e) => handleScroll(e, "#pricing")}>
+                        <h1 className='hover:text-neutral-900 hover:font-medium'>Case Studies</h1>
+                    </Link>
+                    <Link href="#pricing" onClick={(e) => handleScroll(e, "#pricing")}>
                         <h1 className='hover:text-neutral-900 hover:font-medium'>Pricing</h1>
                     </Link>
                     {/* <Link href="#faq" onClick={(e) => handleScroll(e, "#faq")}>

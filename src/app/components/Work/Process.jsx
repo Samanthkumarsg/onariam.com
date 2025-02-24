@@ -15,7 +15,7 @@ export const Process = () => {
 
         const cards = servicesRef.current?.children;
         const borderLine = borderRef.current;
-
+        
         if (cards && borderLine) {
             gsap.fromTo(
                 cards,

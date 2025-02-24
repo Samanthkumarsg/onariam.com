@@ -8,6 +8,7 @@ import { Process } from "./components/Work/Process";
 import { Header } from "./components/Header/Header";
 import Pricing from "./components/Pricing/Pricing";
 import Footer from "./components/Footer/Footer";
+import CaseStudies from "./components/caseStudies/CaseStudies";
 
 export default function Home() {
   const scrollRef = useRef(null);
@@ -42,6 +43,9 @@ export default function Home() {
       </CommonLayout>
       <CommonLayout text={"THIS IS"} title={"How we work"} id="work">
         <Process />
+      </CommonLayout>
+      <CommonLayout text={"Our Clients Case Studies"} title={"Based on true Stories"} id="pricing">
+        <CaseStudies /> 
       </CommonLayout>
       <CommonLayout text={"Simple  "} title={"Pricing"} id="pricing">
         <Pricing />
