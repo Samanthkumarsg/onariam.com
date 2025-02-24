@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
         <h1 className='text-2xl font-semibold text-white font-moderno'>Onariam</h1>
       </div>
       <div className=''>
-        
+
       </div>
     </div>
   )

@@ -81,7 +81,7 @@ const Pricing: React.FC = memo(() => {
                         <div
                             key={item.name}
                             className={`flex flex-col items-center  justify-center text-lg w-full py-4  cursor-pointer 
-                                ${selectedPlan?.name === item.name ? "bg-orange-100/50 rounded-t-xl text-orange-700" : "border-x-0 ring-neutral-200"}`}
+                                ${selectedPlan?.name === item.name ? "bg-orange-700/10 rounded-t-xl text-orange-700" : "border-x-0 ring-neutral-200"}`}
                             onClick={() => handlePlanChange(item)}
                         >
                             <h1 className={`text-sm font-medium ${selectedPlan?.name === item.name ? " text-orange-700" : "text-neutral-400 "} `}> {item.name}</h1>
@@ -92,7 +92,7 @@ const Pricing: React.FC = memo(() => {
             </div>
 
             {/* Features Section */}
-            <div ref={planRef} className={`col-span-2  h-fit w-full flex flex-col items-center bg-orange-50   rounded-b-xl
+            <div ref={planRef} className={`col-span-2  h-fit w-full flex flex-col items-center bg-gradient-to-t from-gray-50/10 to-orange-700/10  rounded-b-xl
              ${selectedPlan?.name == 'Starter' ? " rounded-tl-none rounded-tr-xl text-gray-700" : ""}
              ${selectedPlan?.name == 'Premium' ? "rounded-xl text-gray-700" : ""}
              ${selectedPlan?.name == 'Enterprise' ? " rounded-tr-none rounded-tl-xl  text-gray-700" : ""}
@@ -101,14 +101,14 @@ const Pricing: React.FC = memo(() => {
                 {selectedPlan && (
                     <div className="flex flex-col items-start  rounded-2xl   w-full">
                         <div className="p-6 w-full flex flex-col  items-center justify-center">
-                            <h2 className="text-md mb-1 font-medium text-orange-700 ">{selectedPlan?.name} Benefits</h2>
-                            <h1 className="text-sm font-normal tracking-wide text-neutral-500 ">{selectedPlan?.description}</h1>
+                            <h2 className="text-lg mb-1 font-medium text-orange-700 ">{selectedPlan?.name} Benefits</h2>
+                            <h1 className="text-base font-normal tracking-wide text-gray-600 w-3/4 text-center ">{selectedPlan?.description}</h1>
                             {/* <h3 className="text-md text-secondary  ">Features</h3> */}
 
                         </div>
                         <div className="flex flex-wrap items-center justify-center gap-4 p-4  w-fit  rounded-xl ">
                             {selectedPlan.features.map((item, index) => (
-                                <div key={index} className="text-sm rounded-xl font-normal tracking-wider p-4 text-orange-700 shadow-sm shadow-orange-100 flex items-center justify-start w-full sm:w-full md:w-fit lg:w-fit xl:w-fit   bg-orange-100/70 ">{item}</div>
+                                <div key={index} className="text-sm rounded-xl font-normal tracking-wider p-4 text-orange-700  flex items-center justify-start w-full sm:w-full md:w-fit lg:w-fit xl:w-fit   bg-orange-700/10 ">{item}</div>
                             ))}
 
 

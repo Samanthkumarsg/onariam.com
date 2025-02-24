@@ -8,19 +8,19 @@ export const Card = ({ icon, className = "", title, description }) => {
         : "mt-7 w-full gap-4 ";
 
     const childClasses =
-        "flex items-center justify-center w-full  bg-orange-50 text-orange-700 font-normal tracking-wider p-2 rounded text-xs border border-orange-100";
+        "flex items-center justify-center w-full   bg-orange-100/70 text-orange-700 font-medium tracking-wider p-2 rounded text-xs ";
 
     return (
         <div
-            className={`flex flex-col items-start justify-start rounded-3xl bg-orange-50 border p-4 ${className} `}
+            className={`flex flex-col items-start justify-start rounded-3xl bg-white border p-4 ${className} bg-gradient-to-t from-gray-50/10 to-orange-700/10`}
         >
-            <div className="rounded-xl rounded-tr-none rounded-b-none p-4 pb-0 border border-b-0 border-r-0  border-orange-700/10 flex items-start justify-start">{icon}</div>
+            <div className="rounded-xl rounded-tr-none rounded-b-none  pb-0  mb-1  flex items-start justify-start ">{icon}</div>
             <div className="flex flex-col ">
-                <h1 className="text-lg text-orange-700/80 font-semibold mb-4 uppercase border border-t-0 border-r-0 border-orange-700/10 p-4 pt-1 rounded-b-xl rounded-r-none">{title}</h1>
-                <p className="text-base font-normal leading-normal text-secondary tracking-wide">{description}</p>
+                <h1 className="text-lg text-orange-700/80 font-semibold mb-4 uppercase  pt-1 rounded-b-xl rounded-r-none">{title}</h1>
+                <p className="text-base font-normal leading-normal text-gray-600 tracking-wide">{description}</p>
             </div>
 
-            <div className={`*:text-left *:rounded-xl *:p-3 *:w-fit *:bg-orange-100/70 ${containerClasses} flex gap-4 flex-wrap`}>
+            <div className={`*:tracking-wider sm:w-full md:w-fit lg:w-fit xl:w-fit *:text-left *:text-orange-700 *:text-xs *:font-medium *:rounded-xl *:p-3 *:w-fit *:bg-orange-700/10 ${containerClasses} flex gap-4 flex-wrap`}>
                 {title === "UI/UX" ? (
                     <>
                         <div className={childClasses}>User Research & Behavioral Insights</div>
