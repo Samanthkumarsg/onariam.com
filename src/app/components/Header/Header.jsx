@@ -26,7 +26,7 @@ export const Header = ({ lenis }) => {
     };
 
     return (
-        <div className='w-full fixed bottom-0 sm:bottom-0 md:top-0 lg:top-0 xl:top-0  h-fit z-10'>
+        <div className='w-full fixed top-0 sm:top-0 md:top-0 lg:top-0 xl:top-0  h-fit z-10'>
             <div className='header mt-0 max-w-screen-lg mx-auto  p-3 flex flex-row items-center justify-between rounded-b-2xl bg-white  border border-t-0 z-50'>
                 <div className=' ms-2'>
                     <Link href="#work" onClick={(e) => handleScroll(e, "#hero")}>
