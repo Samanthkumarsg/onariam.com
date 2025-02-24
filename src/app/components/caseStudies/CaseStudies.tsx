@@ -73,7 +73,7 @@ const CaseStudies: React.FC = memo(() => {
 
     return (
 
-        <div className="w-full border border-orange-100 grid grid-cols-1  sm:grid-col-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1  p-4 rounded-3xl overflow-hidden bg-white">
+        <div className="w-full border  grid grid-cols-1  sm:grid-col-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1  p-4 rounded-3xl overflow-hidden bg-white">
 
 
             {/* Features Section */}
