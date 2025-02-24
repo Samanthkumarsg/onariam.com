@@ -82,7 +82,7 @@ const CaseStudies: React.FC = memo(() => {
 
                 <div className="flex flex-col items-start  rounded-2xl   w-full">
                     <div className="p-8 w-full flex flex-col  items-center justify-center">
-                        <h2 className="text-xl   mb-1 font-medium text-orange-700 ">Grado Babo</h2>
+                        <h2 className="text-lg   mb-1 font-medium text-orange-700 ">Grado Babo</h2>
                         <h1 className="text-base font-normal tracking-wide text-gray-600 w-3/4 text-center ">An elegant, responsive website for an Italian restaurant, featuring a dynamic menu, table reservations, and immersive gallery.</h1>
                         {/* <h3 className="text-md text-secondary  ">Features</h3> */}
 
