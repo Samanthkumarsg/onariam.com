@@ -73,7 +73,7 @@ const CaseStudies: React.FC = memo(() => {
 
     return (
 
-        <div className="w-full border  grid grid-cols-1  sm:grid-col-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1  p-4 rounded-3xl overflow-hidden bg-white">
+        <div className="w-full border border-b-0 rounded-br-none rounded-bl-none    grid grid-cols-1  sm:grid-col-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1  p-4 rounded-3xl overflow-hidden bg-white">
 
 
             {/* Features Section */}
@@ -82,7 +82,7 @@ const CaseStudies: React.FC = memo(() => {
 
                 <div className="flex flex-col items-start  rounded-2xl   w-full">
                     <div className="p-8 w-full flex flex-col  items-center justify-center">
-                        <h2 className="text-lg   mb-1 font-medium text-orange-700 ">Grado Babo</h2>
+                        <h2 className="text-lg   mb-1 font-medium text-gray-700 ">Grado Babo</h2>
                         <h1 className="text-base font-normal tracking-wide text-gray-600 w-3/4 text-center ">An elegant, responsive website for an Italian restaurant, featuring a dynamic menu, table reservations, and immersive gallery.</h1>
                         {/* <h3 className="text-md text-secondary  ">Features</h3> */}
 
